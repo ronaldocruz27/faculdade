@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main>
+        <a href="/index.html">Home</a>
+        <h1>Valor a ser pago</h1>
+        <div class="divIPI">
+            <label for="ipi">Qual a porcentagem de IPI?</label>
+            <input type="number" id="ipi" />
+        </div>
+        <div class="divCod">
+            <label for="cod1">Digite o código da primeira peça</label>
+            <input type="number" id="cod1" />
+        </div>
+        <div class="divValor">
+            <label for="val1">Digite o valor da primeira peça:</label>
+            <input type="number" id="val1" />
+        </div>
+        <div class="divQuan">
+            <label for="quan1">Digite a quantidade da primeira peça:</label>
+            <input type="number" id="quan1" />
+        </div>
+        <div class="divCod">
+            <label for="cod2">digite o código da segunda peça:</label>
+            <input type="number" id="cod2" />
+        </div>
+        <div class="divValor">
+            <label for="val2">Digite o valor da segunda peça:</label>
+            <input type="number" id="val2" />
+        </div>
+        <div class="divQuan">
+            <label for="quan2">Digite a quantidade da segunda peça:</label>
+            <input type="number" id="quan2" />
+        </div>
+
+        <button onclick='calculo()'>Calcular</button>
+        
+        <script src="/js/ipi.js"></script>
+        <section id="resultado"></section>
+
+    </main>
+
+</body>
+
+</html>
